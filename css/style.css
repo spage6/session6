@@ -78,6 +78,21 @@ header {
   background: #88a308;
   border-radius: 8px 8px 0 0;
 }
+header .beta_info {
+  display: none;
+  width: 300px;
+  min-height: 120px;
+  background-color: #88a308;
+  color: #fff;
+  position: absolute;
+  top: 10px;
+  left: calc(50% - 150px);
+  border: 2px solid #fff;
+  border-radius: 4px;
+}
+header .beta_info-show {
+  display: block;
+}
 
 header h1 {
   background: url(../img/basil.png) no-repeat;
@@ -141,6 +156,13 @@ header h1 {
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
   background: url(../img/btns.png) no-repeat;
   border-radius: 6px;
+}
+@media screen and (max-width: 860px) {
+  .nav_features a {
+    width: 95px;
+    line-height: 52px;
+    font-size: 1.8em;
+  }
 }
 
 .nav_pickit a {
@@ -206,10 +228,6 @@ header h1 {
     display: none;
   }
 
-  .nav_features a {
-    width: 95px;
-  }
-
   .content_main, .content_sub {
     width: 100%;
     float: none;
@@ -235,9 +253,41 @@ header h1 {
   -webkit-transform: scale(0.4) rotate(15deg);
   -webkit-transition: all 0.5s linear;
 }
-
 .rect-container:hover {
   -webkit-transform: scale(0.5) rotate(0deg);
+}
+@media screen and (max-width: 860px) {
+  .rect-container {
+    top: -50px;
+    right: 10px;
+    -webkit-transform: scale(0.3);
+  }
+}
+@media screen and (max-width: 1080px) {
+  .rect-container {
+    right: -20px;
+  }
+}
+.rect-container .rect {
+  background-color: #f90;
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.rect-container .copy {
+  color: #fff;
+  z-index: 9999;
+  font-size: 5em;
+  text-align: center;
+  line-height: 200px;
+}
+.rect-container .two {
+  -webkit-transform: rotate(30deg);
+}
+.rect-container .three {
+  -webkit-transform: rotate(60deg);
 }
 
 .rect {

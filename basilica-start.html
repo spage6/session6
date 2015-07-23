@@ -34,7 +34,15 @@
 				<div class="rect two"> </div>
 				<div class="rect three"> </div>
 			</div>
+		
+			<div class="beta_info">
+				<h3>Beta Infomation</h3>
+				<p>Fanny pack typewriter occupy sartorial pickled Vice. Paleo four dollar toast meggings, food truck fap normcore occupy retro Helvetica. 90's authentic fanny pack cray, +1 wayfarers health goth stumptown flannel letterpress artisan blog Schlitz lomo. </p>
+			</div>
+
 		</header>
+
+
 
 		<!-- 2. Navigation -->
 		<div class="nav_main">
@@ -116,6 +124,14 @@
 		</footer>
 
 	</div><!-- end wrapper -->
+
+	<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script>
+		$('.rect-container').on('click', function(){
+			$('.beta_info').toggleClass('.beta_info-show');
+		});
+	</script>
+
 </body>
 </html>
 

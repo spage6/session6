@@ -1,3 +1,4 @@
+
 	$green: #88a308;
 	$borders: 4px;
 
@@ -81,6 +82,7 @@
 		left: -100px;
 		padding-left: 272px;
 		padding-top: 90px;
+
 
 	@media screen and (max-width: 860px) {
 		background-image: none;
@@ -172,30 +174,7 @@
 		background: linear-gradient(to bottom, rgba(52,78,144,1) 0%,rgba(110,136,202,1) 100%); /* W3C */
 	}
 
-	.branding h2 {
-		background: url(../img/beta.png) no-repeat;
-		position: absolute;
-		z-index: 300;
-		top:-20px;
-		right: -20px;
-		width: 85px;
-		height: 85px;
-		color: #fff;
-		text-align: center;
-		line-height: 85px;
-		text-transform: uppercase;
-		transform: rotate(12deg);
-/*		transition-property: all;
-		transition-duration: .5s;
-		transition-timing-function: ease-in-out;*/
-		transition: all .5s ease-in-out;
-	}
-	.branding h2:hover {
-		cursor: pointer;
-		transform: rotate(0);
-		transform: scale(1.2);
-
-	}
+	
 
 @media screen and (max-width: 860px) {
 
@@ -223,6 +202,40 @@
 	}
 }
 
+	.rect-container{
+		width: 200px;
+		height: 200px;
+		position: absolute;
+		top: -70px;
+		right: -70px;
+		cursor: pointer;
+		-webkit-transform: scale(0.4) rotate(15deg);
+		-webkit-transition: all 0.5s linear;
+	}
+
+	.rect-container:hover{ 
+		-webkit-transform: scale(0.5) rotate(0deg);
+	}
+
+	.rect {
+		background-color: #f90;
+		width: 200px;
+		height: 200px;
+		position: absolute;
+		top:0;
+		left:0;
+	}
+
+	.copy {
+		color: #fff;
+		z-index: 9999;
+		font-size: 5em;
+		text-align: center;
+		line-height: 200px;
+	}
+
+	.two { -webkit-transform: rotate(30deg); }
+	.three { -webkit-transform: rotate(60deg); }
 
 
 
